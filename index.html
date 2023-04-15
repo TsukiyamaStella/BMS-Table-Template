@@ -33,6 +33,7 @@
             <p class="mb-0">　</p>
         </div>
 
+
 <!--　　　　　ここから難易度表本体　　　　　-->
 <div class="tableflame">
 <table align="center" cellspacing="1" cellpadding=2　border="0" bgcolor="#000000" id="table_int">
@@ -167,6 +168,9 @@ function makeBMSTable(info, mark, order) {
         }
         if(info[i].state == 6) {
         str = $("<tr class='state6'></tr>");
+	}
+        if(info[i].state == 7) {
+        str = $("<tr class='state7'></tr>");
 
         }
 
@@ -245,7 +249,7 @@ function makeBMSTable(info, mark, order) {
         $("<td width='7%'>" + info[i].memo + "</td>").appendTo(str);
 
         // コメント
-        $("<td width='18%'><a href='javaScript:menu(\"" + info[i].md5 + "\")'>→</a><div id='" + info[i].md5 + "' style='display:none'>" + info[i].comment + "</div></td>").appendTo(str);
+        $("<td width='20%'>" + info[i].comment + "</td>").appendTo(str);
         str.appendTo(obj);
         count++;
     }
@@ -262,7 +266,31 @@ function makeBMSTable(info, mark, order) {
 
 
 
+</div>
+<!--/contents-->
+
+<footer>
+<span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
+</footer>
 
 </div>
+<!--/container-->
+
+<!--スマホ用更新情報　480px以下-->
+<script type="text/javascript">
+if (OCwindowWidth() <= 480) {
+	open_close("newinfo_hdr", "newinfo");
+}
+</script>
+
+<!--開閉ブロック-->
+<script type="text/javascript">
+if (OCwindowWidth() < 3000) {
+open_close("openclosebox1_hdr", "openclosebox1");
+
+}
+</script>
+
+
 	    
 </html>
