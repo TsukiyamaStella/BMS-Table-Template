@@ -1,5 +1,5 @@
 {
-"name" : "ここに難易度表の名前",
-"symbol" : "ここにシンボル",
-"data_url" : "ここにJSONのURL"
+"name" : "発狂PMS難易度表(for beatoraja)",
+"symbol" : "●",
+"data_url" : "https://script.google.com/macros/s/AKfycbx4nYxCK_X2vud-r44-lpKBqYMVZzUb8gwmGOQgFF1BdJ2NkFO3yqz6F6tZL2bnOXsK/exec"
 }
